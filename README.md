@@ -11,3 +11,10 @@ dbt-transformations-sql-mock
 ```
 
 - And we created it directly on GitHub.
+
+2. Clone it to your PC
+
+```
+git clone git@github.com:YOUR-USER/dbt-transformations-sql-mock-data.git
+cd your/user/path/dbt-transformations-sql-mock
+```
