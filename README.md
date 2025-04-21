@@ -28,7 +28,12 @@ dbt init transformations
 - To run dbt init transformations, you need to have Python and DBT properly installed.
 
     1. Install Python and pip (if you don't have them)
+
+    <br>
+
     - DBT runs on Python. Fedora already includes Python, but make sure you have pip installed:
+
+    <br>
 
     ```
     sudo dnf install python3-pip
@@ -36,12 +41,16 @@ dbt init transformations
 
     - Verify it's working:
 
+    <br>
+
     ```
     python3 --version
     pip3 --version
     ```
 
     2. (Optional but recommended) Create a virtual environment. This helps keep your environment clean:
+
+    <br>
 
     ```
     python3 -m venv venv
@@ -51,18 +60,24 @@ dbt init transformations
     3. Install DBT
 
     - For BigQuery:
+
+    <br>
     
     ```
     pip install dbt-bigquery
     ```
 
     - For PostgreSQL:
+
+    <br>
     
     ```
     pip install dbt-postgres
     ```
 
     4. Initialize your project
+
+    <br>
     
     ```
     dbt init transformations
@@ -80,11 +95,15 @@ dbt init transformations
 
     - Go into the project folder:
 
+    <br>
+
     ```
     cd transformations
     ```
 
     - Then test your setup:
+
+    <br>
 
     ```
     dbt debug
