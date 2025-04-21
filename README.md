@@ -47,3 +47,15 @@ dbt init transformations
     python3 -m venv venv
     source venv/bin/activate
     ```
+
+    3. Install DBT
+
+    - For BigQuery:
+    ```
+    pip install dbt-bigquery
+    ```
+
+    - For PostgreSQL:
+    ```
+    pip install dbt-postgres
+    ```
