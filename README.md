@@ -40,3 +40,10 @@ dbt init transformations
     python3 --version
     pip3 --version
     ```
+
+    2. (Optional but recommended) Create a virtual environment. This helps keep your environment clean:
+
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
