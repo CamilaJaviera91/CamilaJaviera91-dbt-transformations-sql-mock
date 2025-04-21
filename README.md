@@ -113,3 +113,11 @@ dbt-transformations-sql-mock/
     - Use the same service account.
 
     - Use the same dataset, like raw_data.
+
+6. Push the changes to the new repo
+
+```
+git add .
+git commit -m "Initialize DBT project for transforming and documenting data"
+git push origin main
+```
