@@ -25,4 +25,4 @@ cd your/user/path/dbt-transformations-sql-mock
 dbt init transformations
 ```
 
-    - To run dbt init transformations, you need to have Python and DBT properly installed.
+- To run dbt init transformations, you need to have Python and DBT properly installed.
