@@ -28,3 +28,15 @@ dbt init transformations
 - To run dbt init transformations, you need to have Python and DBT properly installed.
 
     1. Install Python and pip (if you don't have them)
+    - DBT runs on Python. Fedora already includes Python, but make sure you have pip installed:
+
+    ```
+    sudo dnf install python3-pip
+    ```
+
+    - Verify it's working:
+
+    ```
+    python3 --version
+    pip3 --version
+    ```
