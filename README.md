@@ -75,3 +75,19 @@ dbt init transformations
         - profile: use the default one, or configure it later
 
     - This will create a transformations/ folder with all the base files.
+
+    5. Verify everything is working
+
+    - Go into the project folder:
+
+    ```
+    cd transformations
+    ```
+
+    - Then test your setup:
+
+    ```
+    dbt debug
+    ```
+
+    - This will check if everything is ready to use DBT.
