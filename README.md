@@ -105,3 +105,11 @@ dbt-transformations-sql-mock/
 ├── requirements.txt
 └── .gitignore
 ```
+
+5. Connect to the data
+
+- If your other repo (sql-mock-data) contains scripts that load data into BigQuery or a database, make sure the DBT project connects to that same data source. For example:
+
+    - Use the same service account.
+
+    - Use the same dataset, like raw_data.
