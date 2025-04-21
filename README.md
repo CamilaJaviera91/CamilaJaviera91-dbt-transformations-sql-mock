@@ -92,16 +92,16 @@ dbt init transformations
 
     - This will check if everything is ready to use DBT.
 
-    4. Recommended structure
+4. Recommended structure
 
-    ```
-    dbt-transformations-sql-mock/
-    ├── transformations/
-    │   ├── dbt_project.yml
-    │   ├── models/
-    │   │   ├── staging/
-    │   │   └── marts/
-    │   ├── README.md
-    ├── requirements.txt
-    └── .gitignore
-    ```
+```
+dbt-transformations-sql-mock/
+├── transformations/
+│   ├── dbt_project.yml
+│   ├── models/
+│   │   ├── staging/
+│   │   └── marts/
+│   ├── README.md
+├── requirements.txt
+└── .gitignore
+```
