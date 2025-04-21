@@ -18,3 +18,9 @@ dbt-transformations-sql-mock
 git clone git@github.com:YOUR-USER/dbt-transformations-sql-mock-data.git
 cd your/user/path/dbt-transformations-sql-mock
 ```
+
+3. Initialize the DBT project
+
+```
+dbt init transformations
+```
