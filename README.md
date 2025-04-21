@@ -93,6 +93,8 @@ dbt init transformations
 
     5. Verify everything is working
 
+    <br>
+
     - Go into the project folder:
 
     <br>
