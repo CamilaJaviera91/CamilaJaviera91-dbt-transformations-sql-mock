@@ -26,3 +26,5 @@ dbt init transformations
 ```
 
 - To run dbt init transformations, you need to have Python and DBT properly installed.
+
+    1. Install Python and pip (if you don't have them)
