@@ -51,11 +51,27 @@ dbt init transformations
     3. Install DBT
 
     - For BigQuery:
+    
     ```
     pip install dbt-bigquery
     ```
 
     - For PostgreSQL:
+    
     ```
     pip install dbt-postgres
     ```
+
+    4. Initialize your project
+    
+    ```
+    dbt init transformations
+    ```
+
+    - DBT will ask you a few questions:
+
+        - project name: (you can keep transformations)
+
+        - profile: use the default one, or configure it later
+
+    - This will create a transformations/ folder with all the base files.
