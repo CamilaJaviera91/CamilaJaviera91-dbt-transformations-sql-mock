@@ -1,16 +1,15 @@
-# DBT Transformations: SQL Mock Data
+DBT Transformations: SQL Mock Data
+✅ Step-by-Step Setup
 
-## ✅ How would you do it step by step?
+1. Create a New Repository
 
-1. Create a new repository
-
-- In this case we name it:
+Create a new GitHub repository. For this guide, we'll name it:
 
 ```
 dbt-transformations-sql-mock
 ```
 
-- And we created it directly on GitHub.
+- 💡 You can create it directly on GitHub.
 
 2. Clone it to your PC
 
