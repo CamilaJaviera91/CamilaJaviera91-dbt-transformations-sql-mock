@@ -1,5 +1,6 @@
-DBT Transformations: SQL Mock Data
-✅ Step-by-Step Setup
+# DBT Transformations: SQL Mock Data
+
+## ✅ Step-by-Step Setup
 
 1. Create a New Repository
 
