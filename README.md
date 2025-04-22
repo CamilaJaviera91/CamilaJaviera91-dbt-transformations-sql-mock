@@ -105,7 +105,7 @@ dbt init transformations
 
     - This will check if everything is ready to use DBT.
 
-4. Recommended structure
+### 4. Recommended Project Structure
 
 ```
 dbt-transformations-sql-mock-data/
@@ -119,15 +119,17 @@ dbt-transformations-sql-mock-data/
 └── .gitignore
 ```
 
-5. Connect to the data
+### 5. Connect to Your Data
 
-- If your other repo (sql-mock-data) contains scripts that load data into BigQuery or a database, make sure the DBT project connects to that same data source. For example:
+If your other repo (sql-mock-data) contains scripts that load data into BigQuery or PostgreSQL, make sure this DBT project connects to the same data source.
 
-    - Use the same service account.
+    - Use the same service account or connection parameters.
 
-    - Use the same dataset, like raw_data.
+    - Use the same dataset or schema, like raw_data.
 
-6. Push the changes to the new repo
+- **✅ Example: If you're using PostgreSQL with Docker, confirm the profiles.yml matches the container's IP and credentials.**
+
+### 6. Push Your Changes
 
 ```
 git add .
@@ -137,16 +139,18 @@ git push origin main
 
 ---
 
-### Using the starter project
+## ▶️ Using the Starter Project
 
 Try running the following commands:
-- dbt run
-- dbt test
 
+```
+dbt run
+dbt test
+```
 
-### Resources:
+### 📚 Resources
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Check out [Discourse](https://discourse.getdbt.com/) - Q&A and community discussions
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
