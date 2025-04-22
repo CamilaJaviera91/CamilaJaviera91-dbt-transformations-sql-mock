@@ -12,12 +12,16 @@ dbt-transformations-sql-mock
 
 - **💡 You can create it directly on GitHub.**
 
+---
+
 ### 2. Clone the Repository Locally
 
 ```
 git clone git@github.com:YOUR-USER/dbt-transformations-sql-mock-data.git
 cd path/to/dbt-transformations-sql-mock-data
 ```
+
+---
 
 ### 3. Initialize the DBT Project
 
@@ -105,6 +109,8 @@ dbt init transformations
 
     - This will check if everything is ready to use DBT.
 
+---
+
 ### 4. Recommended Project Structure
 
 ```
@@ -118,6 +124,8 @@ dbt-transformations-sql-mock-data/
 ├── requirements.txt
 └── .gitignore
 ```
+
+---
 
 ### 5. Connect to Your Data
 
@@ -177,6 +185,8 @@ transformations:
 
 - **✅ Replace your-gcp-project-id and keyfile with your actual GCP project and the path to your service account key.**
 
+---
+
 ### 6. Push Your Changes
 
 ```
@@ -195,6 +205,8 @@ Try running the following commands:
 dbt run
 dbt test
 ```
+
+---
 
 ## 📚 Resources
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
