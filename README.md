@@ -2,7 +2,7 @@
 
 ## ✅ Step-by-Step Setup
 
-### 1. Create a New Repository
+### 1️⃣ Create a New Repository
 
 Create a new GitHub repository. For this guide, we'll name it:
 
@@ -14,7 +14,7 @@ dbt-transformations-sql-mock
 
 ---
 
-### 2. Clone the Repository Locally
+### 2️⃣ Clone the Repository Locally
 
 ```
 git clone git@github.com:YOUR-USER/dbt-transformations-sql-mock-data.git
@@ -23,7 +23,7 @@ cd path/to/dbt-transformations-sql-mock-data
 
 ---
 
-### 3. Initialize the DBT Project
+### 3️⃣ Initialize the DBT Project
 
 ```
 dbt init transformations
@@ -111,7 +111,7 @@ dbt init transformations
 
 ---
 
-### 4. Recommended Project Structure
+### 4️⃣ Recommended Project Structure
 
 ```
 dbt-transformations-sql-mock-data/
@@ -127,7 +127,7 @@ dbt-transformations-sql-mock-data/
 
 ---
 
-### 5. Connect to Your Data
+### 5️⃣ Connect to Your Data
 
 If your other repo (sql-mock-data) contains scripts that load data into BigQuery or PostgreSQL, make sure this DBT project connects to the same data source.
 
@@ -187,7 +187,7 @@ transformations:
 
 ---
 
-### 6. Push Your Changes
+### 6️⃣ Push Your Changes
 
 ```
 git add .
