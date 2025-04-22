@@ -25,7 +25,7 @@ cd path/to/dbt-transformations-sql-mock-data
 dbt init transformations
 ```
 
-__⚠️ Make sure Python and DBT are installed before running this command.__
+- __⚠️ Make sure Python and DBT are installed before running this command.__
 
     1. Install Python and pip (if you don't have them)
 
