@@ -10,7 +10,7 @@ Create a new GitHub repository. For this guide, we'll name it:
 dbt-transformations-sql-mock
 ```
 
-__💡 You can create it directly on GitHub.__
+- **💡 You can create it directly on GitHub.**
 
 ### 2. Clone the Repository Locally
 
@@ -126,6 +126,37 @@ If your other repo (sql-mock-data) contains scripts that load data into BigQuery
     - Use the same service account or connection parameters.
 
     - Use the same dataset or schema, like raw_data.
+
+ - **💡 Here's a template for your ~/.dbt/profiles.yml with both a PostgreSQL and BigQuery example — you can keep whichever you need, or even include both under different profile names.**
+
+#### 🐘 PostgreSQL (Docker example)
+
+ ```
+transformations:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 172.17.0.1         # Replace with your container's IP (e.g., docker inspect or docker network inspect)
+      port: 5432
+      user: postgres
+      password: yourpassword
+      dbname: employee         # Must match the name of the database
+      schema: raw_data         # Use your target schema name
+      threads: 1
+ ```
+
+-  **✅ Test it with:**
+
+```
+dbt debug
+```
+
+- **💡 If you’re using localhost and pgAdmin/PostgreSQL installed outside Docker, you can try:**
+
+```
+host: localhost
+```
 
 - **✅ Example: If you're using PostgreSQL with Docker, confirm the profiles.yml matches the container's IP and credentials.**
 
