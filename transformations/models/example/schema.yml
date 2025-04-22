@@ -1,11 +1,16 @@
 version: 2
 
+sources:
+  - name: public
+    tables:
+      - name: employees
+        description: "Real table with employee information"
+
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: terminated_employees_by_department
+    description: "Number of terminated employees by department"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+      - name: department
+        description: "Department"
+      - name: employees
+        description: "Number of terminated employees"
