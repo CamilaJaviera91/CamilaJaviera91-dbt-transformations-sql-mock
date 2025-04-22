@@ -29,8 +29,6 @@ dbt init transformations
 
     #### I. Install Python and pip (if you don't have them)
 
-    <br>
-
     - DBT runs on Python. Fedora already includes Python, but make sure you have pip installed:
 
     <br>
@@ -49,8 +47,6 @@ dbt init transformations
     ```
 
     #### II. (Optional but recommended) Create a virtual environment. This helps keep your environment clean:
-
-    <br>
 
     ```
     python3 -m venv venv
@@ -76,8 +72,6 @@ dbt init transformations
     ```
 
     #### IV. Initialize your project
-
-    <br>
     
     ```
     dbt init transformations
@@ -92,8 +86,6 @@ dbt init transformations
     - This will create a transformations/ folder with all the base files.
 
     #### V. Verify everything is working
-
-    <br>
 
     - Go into the project folder:
 
