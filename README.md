@@ -158,7 +158,24 @@ dbt debug
 host: localhost
 ```
 
-- **✅ Example: If you're using PostgreSQL with Docker, confirm the profiles.yml matches the container's IP and credentials.**
+#### ☁️ BigQuery (Service Account)
+
+```
+transformations:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: your-gcp-project-id
+      dataset: raw_data                # Your BigQuery dataset
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      keyfile: /full/path/to/keyfile.json
+```
+
+- **✅ Replace your-gcp-project-id and keyfile with your actual GCP project and the path to your service account key.**
 
 ### 6. Push Your Changes
 
