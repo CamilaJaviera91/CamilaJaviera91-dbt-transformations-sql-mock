@@ -12,20 +12,20 @@ dbt-transformations-sql-mock
 
 __💡 You can create it directly on GitHub.__
 
-2. Clone it to your PC
+2. Clone the Repository Locally
 
 ```
 git clone git@github.com:YOUR-USER/dbt-transformations-sql-mock-data.git
-cd your/user/path/dbt-transformations-sql-mock
+cd path/to/dbt-transformations-sql-mock-data
 ```
 
-3. Initialize the DBT project
+3. Initialize the DBT Project
 
 ```
 dbt init transformations
 ```
 
-- To run dbt init transformations, you need to have Python and DBT properly installed.
+__⚠️ Make sure Python and DBT are installed before running this command.__
 
     1. Install Python and pip (if you don't have them)
 
