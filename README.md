@@ -10,7 +10,7 @@ Create a new GitHub repository. For this guide, we'll name it:
 dbt-transformations-sql-mock
 ```
 
-- 💡 You can create it directly on GitHub.
+__💡 You can create it directly on GitHub.__
 
 2. Clone it to your PC
 
