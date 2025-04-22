@@ -1,4 +1,4 @@
-# dbt transformations: sql mock data
+# DBT Transformations: SQL Mock Data
 
 ## ✅ How would you do it step by step?
 
