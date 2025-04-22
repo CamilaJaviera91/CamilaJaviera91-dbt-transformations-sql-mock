@@ -27,7 +27,7 @@ dbt init transformations
 
 - **⚠️ Make sure Python and DBT are installed before running this command.**
 
-    1. Install Python and pip (if you don't have them)
+    #### I. Install Python and pip (if you don't have them)
 
     <br>
 
@@ -48,7 +48,7 @@ dbt init transformations
     pip3 --version
     ```
 
-    2. (Optional but recommended) Create a virtual environment. This helps keep your environment clean:
+    #### II. (Optional but recommended) Create a virtual environment. This helps keep your environment clean:
 
     <br>
 
@@ -57,7 +57,7 @@ dbt init transformations
     source venv/bin/activate
     ```
 
-    3. Install DBT
+    #### III. Install DBT
 
     - For BigQuery:
 
@@ -75,7 +75,7 @@ dbt init transformations
     pip install dbt-postgres
     ```
 
-    4. Initialize your project
+    #### IV. Initialize your project
 
     <br>
     
@@ -91,7 +91,7 @@ dbt init transformations
 
     - This will create a transformations/ folder with all the base files.
 
-    5. Verify everything is working
+    #### V. Verify everything is working
 
     <br>
 
