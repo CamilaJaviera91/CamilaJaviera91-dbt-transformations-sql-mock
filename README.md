@@ -137,7 +137,7 @@ transformations:
   outputs:
     dev:
       type: postgres
-      host: 172.17.0.1         # Replace with your container's IP (e.g., docker inspect or docker network inspect)
+      host: 172.17.0.1         # Replace with your container's IP
       port: 5432
       user: postgres
       password: yourpassword
