@@ -40,3 +40,51 @@ models:
         description: "Number of hires in the year"
       - name: terminated_count
         description: "Number of terminations in the year"
+
+  - name: employees_resume
+    description: >
+      Summary of employee data grouped by gender, department, and job title.
+      Includes calculated fields such as estimated age, working years, and employee status.
+    columns:
+      - name: gender
+        description: Gender of the employee.
+        tests:
+          - not_null
+
+      - name: department
+        description: Department the employee belongs to.
+        tests:
+          - not_null
+
+      - name: job_title
+        description: Job title held by the employee.
+        tests:
+          - not_null
+
+      - name: employees
+        description: Total number of employees in the grouped combination of gender, department, job title, and status.
+        tests:
+          - not_null
+          - numeric_bounds:
+              min: 1
+
+      - name: age
+        description: Estimated age calculated as the difference between current year and birth year.
+        tests:
+          - not_null
+          - expression_is_true:
+              expression: "age >= 15"
+
+      - name: working_years
+        description: Estimated number of years worked based on hire and termination dates.
+        tests:
+          - not_null
+          - expression_is_true:
+              expression: "working_years >= 0"
+
+      - name: status
+        description: Employment status (e.g., ACTIVE or TERMINATED).
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['ACTIVE', 'TERMINATED']
