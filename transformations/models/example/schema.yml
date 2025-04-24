@@ -14,3 +14,17 @@ models:
         description: "Department"
       - name: employees
         description: "Number of terminated employees"
+    
+  - name: turnover_data_by_department
+    description: "Department-level summary of employee count, terminations, and turnover rate"
+    columns:
+      - name: department
+        description: "Department name"
+      - name: employees
+        description: "Total number of employees"
+      - name: terminated
+        description: "Number of employees who have left"
+      - name: active_employees
+        description: "Current number of active employees"
+      - name: turnover_rate
+        description: "Termination rate per department"
