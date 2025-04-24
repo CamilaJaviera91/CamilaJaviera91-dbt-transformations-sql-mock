@@ -22,7 +22,7 @@ GROUP BY
     EXTRACT(YEAR FROM e.termination_date::DATE),
     e.status
 ORDER BY EXTRACT(YEAR FROM e.date_birth::DATE) ASC)
-SELECT DISTINCT 
+SELECT 
     er.gender,
     er.department,
     er.job_title,
