@@ -7,7 +7,7 @@ sources:
         description: "Real table with employee information"
 
 models:
-  - name: terminated_employees_by_department
+  - name: terminated_by_department
     description: "Number of terminated employees by department"
     columns:
       - name: department
@@ -15,7 +15,7 @@ models:
       - name: employees
         description: "Number of terminated employees"
     
-  - name: turnover_data_by_department
+  - name: turnover_by_department
     description: "Department-level summary of employee count, terminations, and turnover rate"
     columns:
       - name: department
