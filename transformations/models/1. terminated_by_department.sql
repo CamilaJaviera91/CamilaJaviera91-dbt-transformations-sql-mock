@@ -1,15 +1,12 @@
 {{ config(materialized='table') }}
 
-with employees as (
-
-    select *
-    from {{ source('public', 'employees') }}
-
-)
-
-select 
-    department, 
-    count(*) as employees
-from employees
-where termination_date is not null
-group by department
+WITH employees AS (
+    SELECT *
+    FROM {{ source('public', 'employees') }}) 
+    
+    SELECT
+        e.department, 
+        COUNT(e.id) AS employees
+    FROM employees e
+    WHERE termination_date IS NOT NULL
+    GROUP BY department
