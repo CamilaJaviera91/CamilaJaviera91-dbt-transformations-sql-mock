@@ -16,4 +16,4 @@ SELECT
     bd.active_employees,
     ROUND((bd.terminated * 1.0 / bd.employees), 2) AS turnover_rate
 FROM by_department bd
-ORDER BY bd.active_employees DESC;
+ORDER BY bd.active_employees DESC
