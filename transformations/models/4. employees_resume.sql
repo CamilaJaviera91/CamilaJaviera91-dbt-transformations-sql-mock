@@ -34,4 +34,4 @@ SELECT
     END AS working_years,
     er.status
 FROM employees_resume er
-ORDER BY age DESC;
+ORDER BY age DESC

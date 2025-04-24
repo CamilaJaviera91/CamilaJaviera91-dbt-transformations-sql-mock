@@ -10,4 +10,4 @@ WHERE e.hire_date IS NOT NULL OR e.termination_date IS NOT NULL
 GROUP BY 
     EXTRACT(YEAR FROM COALESCE(e.hire_date::DATE, e.termination_date::DATE)), 
     e.department
-ORDER BY year;
+ORDER BY year
