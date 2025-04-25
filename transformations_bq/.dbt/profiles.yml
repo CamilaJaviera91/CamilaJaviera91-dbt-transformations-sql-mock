@@ -4,7 +4,7 @@ transformations_bigquery:
     dev:
       type: bigquery
       method: service-account
-      project: thinking-star-427923-v6.employees
+      project: thinking-star-427923-v6
       dataset: employees
       keyfile: /home/camilajaviera/gcloud/auth.json
       threads: 2
