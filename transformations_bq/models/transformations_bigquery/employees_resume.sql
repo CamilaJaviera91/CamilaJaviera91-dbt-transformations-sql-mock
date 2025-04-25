@@ -5,23 +5,14 @@ WITH employees_resume AS (
     e.gender,
     e.department,
     e.job_title,
-    EXTRACT(YEAR FROM CURRENT_DATE()) AS current_year,
-    EXTRACT(YEAR FROM DATE(e.date_birth)) AS birth_year,
-    EXTRACT(YEAR FROM DATE(e.hire_date)) AS hired_year,
-    EXTRACT(YEAR FROM DATE(e.termination_date)) AS termination_year,
+    e.total_salary,
+    e.current_year,
+    e.birth_year,
+    e.hired_year,
+    e.termination_year,
     e.status,
-    COUNT(e.id) AS employees
-  FROM {{ source('public', 'employees') }} e  
-  GROUP BY 
-    e.gender,
-    e.department,
-    e.job_title,
-    EXTRACT(YEAR FROM CURRENT_DATE()),
-    EXTRACT(YEAR FROM DATE(e.date_birth)),
-    EXTRACT(YEAR FROM DATE(e.hire_date)),
-    EXTRACT(YEAR FROM DATE(e.termination_date)),
-    e.status
-)
+    e.employees
+  FROM {{ source('employees', 'employees_resume') }} e )
 SELECT 
   er.gender,
   er.department,
