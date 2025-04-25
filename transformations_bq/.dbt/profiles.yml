@@ -1,10 +1,14 @@
 transformations_bigquery:
-  target: dev
   outputs:
     dev:
-      type: bigquery
-      method: service-account
-      project: thinking-star-427923-v6
       dataset: employees
+      job_execution_timeout_seconds: 300
+      job_retries: 1
       keyfile: /home/camilajaviera/gcloud/auth.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: thinking-star-427923-v6
       threads: 2
+      type: bigquery
+  target: dev
