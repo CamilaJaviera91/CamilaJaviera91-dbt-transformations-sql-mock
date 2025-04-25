@@ -1,0 +1,12 @@
+transformations_postgres:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: admin123
+      port: 5432
+      dbname: postgres
+      schema: public 
+      threads: 2

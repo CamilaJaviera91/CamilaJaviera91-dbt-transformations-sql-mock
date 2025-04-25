@@ -1,0 +1,22 @@
+# File: dbt_project.yml
+
+name: 'transformations'
+version: '1.0.0'
+
+profile: 'transformations_bigquery'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  transformations:
+    example:
+      +materialized: view
