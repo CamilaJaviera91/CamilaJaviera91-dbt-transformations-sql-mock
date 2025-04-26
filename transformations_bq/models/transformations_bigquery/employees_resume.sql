@@ -12,7 +12,7 @@ WITH employees_resume AS (
     e.termination_year,
     e.status,
     e.employees
-  FROM {{ source('employees', 'employees_resume') }} e )
+  FROM `thinking-star-427923-v6.employees.employees` e )
 SELECT 
   er.gender,
   er.department,
