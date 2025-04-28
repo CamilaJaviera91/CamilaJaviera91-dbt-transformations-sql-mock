@@ -131,7 +131,7 @@ dbt-transformations-sql-mock-data/
 
 ### Step 5: Connect to Your Data
 
-If your other repo (sql-mock-data) contains scripts that load data into BigQuery or PostgreSQL, make sure this DBT project connects to the same data source.
+If your other repo (`sql-mock-data`) contains scripts that load data into BigQuery or PostgreSQL, make sure this DBT project connects to the same data source.
 
     - Use the same service account or connection parameters.
 
