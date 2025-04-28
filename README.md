@@ -1,4 +1,4 @@
-# DBT Transformations: SQL Mock Data
+# dbt Transformations for SQL Mock Data
 
 This repository contains the transformations and documentation for the data model generated in [sql-mock-data](https://github.com/CamilaJaviera91/sql-mock-data).
 
