@@ -6,7 +6,7 @@ This repository contains the transformations and documentation for the data mode
 
 ### Step 1: Create a New Repository
 
-Create a new GitHub repository. For this guide, we'll name it:
+Create a new GitHub repository. For this guide, we'll name it.
 
 ```
 dbt-transformations-sql-mock
@@ -35,7 +35,7 @@ dbt init transformations
 
     #### Ⅰ. Install Python and pip (if you don't have them)
 
-    - DBT runs on Python. Fedora already includes Python, but make sure you have pip installed:
+    - DBT runs on Python. Fedora already includes Python, but make sure you have pip installed.
 
     <br>
 
@@ -43,7 +43,7 @@ dbt init transformations
     sudo dnf install python3-pip
     ```
 
-    - Verify it's working:
+    - Verify it's working.
 
     <br>
 
@@ -61,7 +61,7 @@ dbt init transformations
 
     #### Ⅲ. Install DBT
 
-    - For BigQuery:
+    - For BigQuery.
 
     <br>
     
@@ -69,7 +69,7 @@ dbt init transformations
     pip install dbt-bigquery
     ```
 
-    - For PostgreSQL:
+    - For PostgreSQL.
 
     <br>
     
@@ -101,7 +101,7 @@ dbt init transformations
     cd transformations
     ```
 
-    - Then test your setup:
+    - Then test your setup.
 
     <br>
 
@@ -201,7 +201,7 @@ git push origin main
 
 ## ▶️ Using the Starter Project
 
-Try running the following commands:
+Try running the following commands.
 
 ```
 dbt run
